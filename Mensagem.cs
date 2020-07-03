@@ -10,12 +10,11 @@ namespace Aula31WhatsAppConsole
 
         public void Enviar(Contato ctt)
         {
-            string _mensagem;
 
             System.Console.WriteLine($"Digite sua mensagem para {ctt.Nome}:");
-            _mensagem = Console.ReadLine();
+            Texto = Console.ReadLine();
 
-            if( _mensagem == "" )
+            if( Texto == "" )
             {
                 System.Console.WriteLine("A mensagem não pode ser vazia");
             }else{
