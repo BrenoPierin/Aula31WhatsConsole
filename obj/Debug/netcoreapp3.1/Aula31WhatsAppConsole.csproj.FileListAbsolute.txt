@@ -1,0 +1,13 @@
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.exe
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.deps.json
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.runtimeconfig.json
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.runtimeconfig.dev.json
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.dll
+C:\Breno USA\Senai\Aula31WhatsAppConsole\bin\Debug\netcoreapp3.1\Aula31WhatsAppConsole.pdb
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.csprojAssemblyReference.cache
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.csproj.CoreCompileInputs.cache
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.AssemblyInfoInputs.cache
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.AssemblyInfo.cs
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.dll
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.pdb
+C:\Breno USA\Senai\Aula31WhatsAppConsole\obj\Debug\netcoreapp3.1\Aula31WhatsAppConsole.genruntimeconfig.cache

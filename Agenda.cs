@@ -1,20 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
 namespace Aula31WhatsAppConsole
 {
     public class Agenda : IAgenda
     {
+
+        public List<Contato> Contatos;
+
+        private const string PATH = "Database/contatos.csv";
+
+
+        //--------------------------------------------------------------------
+        // public Agenda()
+        // {
+            
+        // }
+
+
+        //-----------------------------------------------------------------------
         public void Cadastrar(Contato ctt)
         {
-            throw new System.NotImplementedException();
+            var linha = new string[] { PrepararLinha(ctt) };
+            File.AppendAllLines(PATH, linha);
         }
 
-        public void Excluir(Contato ctt)
+
+        //-----------------------------------------------------------------------
+        public void Excluir(string termo)
         {
-            throw new System.NotImplementedException();
+            //Criamos uma lista de linhas para fazer um "backup"
+            //na memoria do sistema
+            List<string> linhas = new List<string>();
+
+            // Removi as linhas que tiverem o termo passado como argumento
+            linhas.RemoveAll(l => l.Contains(termo));
+
+            // Reescreve o csv
+            ReescreverCSV(linhas);
         }
 
-        public void Listar()
+
+        //-----------------------------------------------------------------------
+        public List<Contato> Listar()
         {
-            throw new System.NotImplementedException();
+            List<Contato> lista = new List<Contato>();
+
+            string[] linhas = File.ReadAllLines(PATH);
+            
+            lista = lista.OrderBy(y => y.Nome).ToList();
+
+            return lista;
+            
         }
+
+        private string PrepararLinha(Contato p)
+        {
+            return $"{p.Nome};{p.Numero}";
+        }
+
+        private void ReescreverCSV(List<string> lines){
+            // Reescrevi o csv do zero
+            using(StreamWriter output = new StreamWriter(PATH))
+            {
+                foreach(string ln in lines)
+                {
+                    output.Write(ln + "\n");
+                }
+            }   
+        }
+
     }
 }
