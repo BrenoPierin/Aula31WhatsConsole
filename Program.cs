@@ -14,8 +14,8 @@ namespace Aula31WhatsAppConsole
 
             List<Contato> Lista = agenda.Listar();
 
-            agenda.Excluir("Otavio");
-            
+            // agenda.Excluir("Otavio");
+
             foreach(Contato c in Lista)
             {
                 Console.WriteLine($"Nome: {ctt.Nome} - Numero: {ctt.Numero}");
