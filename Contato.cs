@@ -8,6 +8,10 @@ namespace Aula31WhatsAppConsole
         public string Numero { get; set; }
 
 
+        /// <summary>
+        /// metodos contrutores de contato
+        /// </summary>
+        //-----------------------------------------------------------------------
         public Contato()
         {
             

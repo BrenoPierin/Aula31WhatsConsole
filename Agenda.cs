@@ -12,15 +12,20 @@ namespace Aula31WhatsAppConsole
 
         private const string PATH = "Database/contatos.csv";
 
-
+        /// <summary>
+        /// metodo contrutur de agenda
+        /// </summary>
         //--------------------------------------------------------------------
         public Agenda()
         {
             
         }
 
-
-        //-----------------------------------------------------------------------
+        /// <summary>
+        /// Metodo para colocar o contato na agenda
+        /// </summary>
+        /// <param name="ctt">nome dado ao contato</param>
+        /// //-----------------------------------------------------------------------
         public void Cadastrar(Contato ctt)
         {
             var linha = new string[] { PrepararLinha(ctt) };
@@ -28,6 +33,10 @@ namespace Aula31WhatsAppConsole
         }
 
 
+        /// <summary>
+        /// Metodo para excluir um contato da agenda e do csv
+        /// </summary>
+        /// <param name="termo">termo do contato para apagar,pode ser nome ou numero</param>
         //-----------------------------------------------------------------------
         public void Excluir(string termo)
         {
@@ -54,6 +63,10 @@ namespace Aula31WhatsAppConsole
         }
 
 
+        /// <summary>
+        /// Metodo para listar os produtos 
+        /// </summary>
+        /// <returns>produtos no console</returns>
         //-----------------------------------------------------------------------
         public List<Contato> Listar()
         {
@@ -67,11 +80,23 @@ namespace Aula31WhatsAppConsole
             
         }
 
+
+        /// <summary>
+        /// metodo para preparar a linha antes de implementar no csv
+        /// </summary>
+        /// <param name="p">nome dado ao contato</param>
+        /// <returns>nome e numero do contato</returns>
+        //-----------------------------------------------------------------------
         private string PrepararLinha(Contato p)
         {
             return $"Nome: {p.Nome}; Telefone: {p.Numero}";
         }
 
+        /// <summary>
+        /// Metodo para reescrever linha do csv
+        /// </summary>
+        /// <param name="lines">linhas do csv</param>
+        //-----------------------------------------------------------------------
         private void ReescreverCSV(List<string> lines){
             // Reescrevi o csv do zero
             using(StreamWriter output = new StreamWriter(PATH))

@@ -7,14 +7,14 @@ namespace Aula31WhatsAppConsole
     {
         static void Main(string[] args)
         {
-            Contato ctt = new Contato("Jeferson", "+55 11 98134-3262");
+            Contato ctt = new Contato("sa", "+55 11 98134-3262");
             Agenda agenda = new Agenda();
             agenda.Cadastrar(ctt);
 
 
             List<Contato> Lista = agenda.Listar();
 
-            agenda.Excluir("Otavio");
+            agenda.Excluir("Jeferson");
 
             foreach(Contato c in Lista)
             {
