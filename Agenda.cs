@@ -14,10 +14,10 @@ namespace Aula31WhatsAppConsole
 
 
         //--------------------------------------------------------------------
-        // public Agenda()
-        // {
+        public Agenda()
+        {
             
-        // }
+        }
 
 
         //-----------------------------------------------------------------------
@@ -34,6 +34,17 @@ namespace Aula31WhatsAppConsole
             //Criamos uma lista de linhas para fazer um "backup"
             //na memoria do sistema
             List<string> linhas = new List<string>();
+
+             using(StreamReader file = new StreamReader(PATH))
+            {
+            
+                string linha;
+                while((linha = file.ReadLine()) != null)
+                {
+                    linhas.Add(linha);
+                }
+            
+            }
 
             // Removi as linhas que tiverem o termo passado como argumento
             linhas.RemoveAll(l => l.Contains(termo));
@@ -58,7 +69,7 @@ namespace Aula31WhatsAppConsole
 
         private string PrepararLinha(Contato p)
         {
-            return $"{p.Nome};{p.Numero}";
+            return $"Nome: {p.Nome}; Telefone: {p.Numero}";
         }
 
         private void ReescreverCSV(List<string> lines){

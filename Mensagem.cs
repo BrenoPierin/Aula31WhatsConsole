@@ -8,7 +8,7 @@ namespace Aula31WhatsAppConsole
 
         public string Destinatario { get; set; }
 
-        public void Enviar(Contato ctt)
+        public void EnviarMensagem(Contato ctt)
         {
 
             System.Console.WriteLine($"Digite sua mensagem para {ctt.Nome}:");
@@ -18,7 +18,7 @@ namespace Aula31WhatsAppConsole
             {
                 System.Console.WriteLine("A mensagem não pode ser vazia");
             }else{
-                System.Console.WriteLine($"Mensagem enviada para {ctt.Nome}");
+                System.Console.WriteLine($"Mensagem {Texto} enviada para {ctt.Nome}");
             }
         }
     }
