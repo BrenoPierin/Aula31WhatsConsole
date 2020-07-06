@@ -4,8 +4,8 @@ namespace Aula31WhatsAppConsole
 {
     public interface IAgenda
     {
-         public void Cadastrar(Contato ctt);
-         public void Excluir(string termo);
-         public List<Contato> Listar();
+         void Cadastrar(Contato ctt);
+         void Excluir(string termo);
+         List<Contato> Listar();
     }
 }
