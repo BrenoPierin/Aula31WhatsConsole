@@ -6,7 +6,7 @@ namespace Aula31WhatsAppConsole
     {
         public string Texto { get; set; }
 
-        public string Destinatario { get; set; }
+        public Contato Destinatario { get; set; }
 
         /// <summary>
         /// Metodo para enviar mensagem a algum contato da agenda
