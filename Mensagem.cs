@@ -23,7 +23,7 @@ namespace Aula31WhatsAppConsole
             {
                 System.Console.WriteLine("A mensagem não pode ser vazia");
             }else{
-                System.Console.WriteLine($"Mensagem '{Texto}' enviada para {ctt.Nome}");
+                System.Console.WriteLine($"\nMensagem '{Texto}' enviada para {ctt.Nome}");
             }
         }
     }
